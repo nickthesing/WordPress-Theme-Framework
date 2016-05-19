@@ -1,0 +1,406 @@
+/*---------------------------------------------------------------------------------------------
+* Theme Admin Style
+* Version 1.0
+* Description: All style for the admin
+---------------------------------------------------------------------------------------------*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-4r1q6l');
+	src:url('fonts/icomoon.eot?#iefix-4r1q6l') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-4r1q6l') format('woff'),
+		url('fonts/icomoon.ttf?-4r1q6l') format('truetype'),
+		url('fonts/icomoon.svg?-4r1q6l#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-code-fork:before {
+	content: "\e601";
+}
+.icon-file:before {
+	content: "\e600";
+}
+.icon-close:before {
+	content: "\e602";
+}
+
+
+/* Buttons */
+.tf-wrapper .main-button, .secondary-button {
+	font-family: "Open Sans";
+    padding: 8px 15px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-clip: padding-box;
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    -webkit-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    -moz-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    font-size: 13px;
+    color: #fff;
+	background-color: #2ba6cb;
+	text-shadow: 0 1px 0px rgba(0, 0, 0, 0.15);
+	border-color: #2795b6;
+	margin: 0 15px 0 0;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.tf-wrapper .secondary-button {
+	color: #787878;
+	background-color: #fcfcfd;
+	border-color: #e6e6ed;
+	text-decoration: none; 
+}
+
+.main-button:hover,
+.secondary-button:hover {
+	color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.main-button:hover { background-color: #3bb3d7; }
+.secondary-button:hover { 
+	background-color: #f6f6f7; 
+	color: #787878;
+}
+
+.tf-wrapper .button {
+	margin: 0 10px 0 0;
+}
+
+.tf-wrapper .danger-button {
+	color: red;
+}
+
+.tf-wrapper .danger-button:hover {
+	border: 1px solid red;
+	color: red;
+}
+
+.tf-wrapper input:focus, 
+.tf-wrapper input:active
+.tf-wrapper textarea:active, 
+.tf-wrapper textarea:focus,
+.tf-option select:focus,
+.tf-option select:active {
+	outline: none;
+	box-shadow: none;
+}
+
+.tf-wrapper {
+	font-size: 12px;
+	font-family: "Montserrat";
+	margin: 20px 20px 0 0;
+}
+
+.tf-wrapper nav {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 60px;
+}
+
+.tf-wrapper nav li {
+	float: left;
+}
+
+.tf-wrapper nav li a.active {
+	background-color: #444;
+	color: #fff;
+	border-right-color: #444;
+	border-left: 1px solid #444;
+	margin-left: -1px;
+}
+
+.tf-wrapper nav a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #444;
+  text-decoration: none;
+  padding: 21px 15px;
+  border-right: 1px solid #ddd; 
+}
+
+.tf-wrapper nav a.nav-active {
+	background-color: #444;
+	color: #fff;
+	border-right-color: #444;
+	border-left: 1px solid #444;
+	margin-left: -1px; 
+}
+
+.tf-wrapper nav a.nav-active:hover {
+	color: #fff; 
+}
+
+.tf-wrapper nav a:hover {
+	color: #2ea2cc;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.tf-wrapper nav .nav-right {
+	float: right;
+}
+
+.tf-wrapper nav .nav-right:last-child {
+	margin: 0;
+	border-left: 1px solid #ddd; 
+}
+
+.tf-wrapper nav .tf-update-button {
+	float: right;
+}
+
+.tf-wrapper nav .tf-button {
+	
+}
+
+.tf-wrapper nav .tf-update-button a {
+	background-color: #2ba6cb;
+	color: #fff;
+	padding: 7px 15px;
+	height: auto;
+	margin: 15px 20px;
+	border-radius: 2px;
+}
+
+.tf-wrapper nav i {
+	font-size: 16px;
+}
+
+.tf-wrapper nav .tf-update-button a:hover {
+	background-color: #55b8d5;
+	 -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.tf-wrapper nav .tf-settings-updated, .tf-wrapper nav .tf-settings-reset {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #fff;
+	background-color: #2ba6cb;
+	width: 154px;
+	padding: 10px 0;
+	text-align: center;
+	border: none;
+	text-shadow: 0 1px 0px rgba(0, 0, 0, 0.15);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-clip: padding-box;
+	text-transform: uppercase;
+}
+
+.tf-wrapper .tf-option-container {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+}
+
+.tf-option {
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #eee;
+	margin: 0 0 20px 0;
+	max-width: 70%;
+}
+
+.tf-option-buttons {
+	margin: 0 0 10px 0;
+}
+
+.tf-option h2 {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 0 10px 0;
+}
+
+.tf-option p {
+	margin: 0 0 10px 0;
+	font-family: 'Open Sans';
+}
+
+.tf-option input {
+	margin: 0 0 10px 0;
+	width: 100%;
+    display: inline-block;
+    padding: 7px 30px 7px 5px;
+ 	border: 1px solid #e1e1e1;
+  	-webkit-border-radius: 3px;
+  	border-radius: 2px;
+  	font-size: 12px;
+}
+
+.tf-option input:focus,
+.tf-option input:active,
+.tf-option textarea:focus,
+.tf-option textarea:active,
+.tf-option select:active,
+.tf-option select:hover {
+	border-color: #d3d3d3;
+}
+
+.tf-option textarea {
+	width: 100%;
+	height: 140px;
+	resize: vertical;
+}
+
+.tf-option select {
+	width: 100%;
+	min-height: 30px;
+}
+
+.tf-input-container {
+	position: relative;
+}
+
+.tf-remove-upload {
+	display: inline;
+	position: absolute;
+	right: 5px;
+	height: 22px;
+	width: 22px;
+	top: 5px;
+	color: #787878;
+	text-align: center;
+	line-height: 22px;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.tf-remove-upload:hover {
+	color: #ed2d2d;
+}
+
+/* Upload preview */
+.tf-wrapper .preview-content-block {
+	display: none;
+}
+
+.preview-content-block {
+	display: table;
+	width: 100%;
+}
+.preview-content-block .preview-content-container {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.preview-content-block .preview-content-container img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 15px 0; 
+}
+
+/* Colorpicker */
+.tf-wrapper .wp-picker-container > a {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.tf-wrapper .wp-picker-container .wp-picker-input-wrap {
+	width: 200px;
+}
+
+.tf-wrapper .wp-picker-container input.wp-color-picker {
+	float: left;
+	height: 24px;
+	margin: 0 20px 0 0;
+	font-family: 'Open Sans';
+}
+
+.tf-wrapper .wp-picker-container .wp-picker-clear {
+	max-width: 100px;
+}
+
+.tf-radio-images {
+	height: 60px;
+}
+
+.tf-radio-images label {
+	display: inline-block;
+	float: left;
+	height: 55px;
+	width: 69px;
+	margin: 0 20px 0 0;
+}
+
+.tf-radio-images label.checked {
+	outline: 2px solid #55b8d5;
+}
+
+.tf-radio-images input {
+	display: none;
+}
+
+.tf-radio-images .radio-image-left,
+.tf-radio-images .radio-image-right {
+	background: transparent url('../images/blog-left.png') no-repeat top left;
+}
+
+.tf-radio-images .radio-image-center,
+.tf-radio-images .radio-image-mid { 
+	background: transparent url('../images/blog-center.png') no-repeat top left;
+}
+
+.tf-option-message-box {
+	width: 100%;
+	margin: 10px 0;
+	background-color: #f9f9f9;
+	padding: 10px 10px 0 10px;
+	border: 1px solid #eee;
+}
+
+.tf-option-container input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+}
+
+.tf-option-container input[type="checkbox"]:before {
+	margin: -1px 0 0 -2px;
+}
+
+.tf-wrapper .backup-notice {
+	font-style: italic;
+}
+
+
+
+
+
